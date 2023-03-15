@@ -30,14 +30,13 @@ const Home = () => {
 				<form onSubmit={(e) => changeStep(currentStep + 1, e)}>
 					<div className="inputs-container">{currentComponent}</div>
 					<div className="actions">
+
 						{!isFirstStep && (
 							<button type="button" onClick={() => changeStep(currentStep - 1)}>
 								<GrFormPrevious />
 								<span>Voltar </span>
 							</button>
 						)}
-
-
 
 
 						{!isLastStep ? (
@@ -51,6 +50,7 @@ const Home = () => {
 								<FiSend />
 							</button>
 						)}
+
 					</div>
 				</form>
 			</div>
